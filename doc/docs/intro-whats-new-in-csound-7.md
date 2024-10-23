@@ -1,0 +1,3 @@
+# What's new in Csound 7
+
+to be written ...
