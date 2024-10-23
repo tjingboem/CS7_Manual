@@ -1,3 +1,0 @@
-# Welcome to the Csound 7 Manual!
-
-This manual ...

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>The `.csd` File Format - Csound 7 Manual</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "The `.csd` File Format";
+        var mkdocs_page_input_path = "invoke-the-csd-file-format.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Csound 7 Manual
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../intro-whats-new-in-csound-7/">What's New in Csound 7</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../intro-historic-preface/">Historical Preface</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../intro-history-of-the-manual/">History of the Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../intro-copyright-notice/">Copyright Notice</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Invoking Csound</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../invoke-how-csound-works/">How Csound Works</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">The `.csd` File Format</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#mandatory-elements">Mandatory Elements</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#enclosing-tag-csoundsynthesizer">Enclosing tag (&lt;CsoundSynthesizer>)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#options-csoptions">Options (&lt;CsOptions>)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#score-csscore">Score (&lt;CsScore>)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#optional-elements">Optional Elements</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#included-base64-files-csfileb">Included Base64 Files (&lt;CsFileB>)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#included-unencoded-files-csfile">Included Unencoded Files (&lt;CsFile>)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#version-blocking-csversion">Version Blocking (&lt;CsVersion>)</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../invoke-the-csound-command/">The `csound` Command</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../invoke-cs-options-alphabetically/">Csound Options (flags) Alphabetically</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../invoke-cs-options-by-category/">Csound Options (flags) by Category</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../invoke-environment-variables/">Environment Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../invoke-order-of-precedence/">Order of Precedence</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Syntax of the Orchestra</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-header-statements/">Header Statements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-global-space/">Global Space</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-instruments/">Instruments</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-data-types/">Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-variables/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-macros/">Macros</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-user-defined-opcodes/">User Defined Opcodes (UDO)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-traditional-functional-code/">Traditional and Functional Code</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Syntax of the Score</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../sco-parameter-fields/">Parameter Fields</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sco-preprocessing/">Preprocessing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sco-statements/">Statements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sco-macros/">Macros</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sco-included-files/">Included Files</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sco-expressions/">Expressions</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Csound 7 Manual</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Invoking Csound</li>
+      <li class="breadcrumb-item active">The `.csd` File Format</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="the-csdfile-format">The <code>.csd</code>file format</h1>
+<p>The Unified File Format, introduced in Csound version 3.50, enables the orchestra and score files, as well as command line flags, to be combined in one file. The file has the extension .csd. This format was originally introduced by Michael Gogins in AXCsound.</p>
+<p>The file is a structured data file which uses markup language, similar to any SGML such as HTML. Start tags (<tag>) and end tags (</tag>) are used to delimit the various elements. The file is saved as a text file.</p>
+<h2 id="mandatory-elements">Mandatory Elements</h2>
+<h3 id="enclosing-tag-csoundsynthesizer">Enclosing tag (&lt;CsoundSynthesizer&gt;)</h3>
+<p>The first tag in the file must be the start tag <CsoundSynthesizer>. The last tag in the file must be the end tag </CsoundSynthesizer>. This element is used to alert the csound compiler to the .csd format. All text before the start tag and after the end tag is ignored by Csound. The tag may also be spelled <CsoundSynthesiser>.</p>
+<h3 id="options-csoptions">Options (&lt;CsOptions&gt;)</h3>
+<p>Csound command line flags are put in the Options Element. This section is delimited by the start tag <CsOptions> and the end tag </CsOptions> Lines beginning with # or ; are treated as comments.
+Orchestra (<CsInstruments>)</p>
+<p>The instrument definitions (orchestra) are put into the Instruments Element. The statements and syntax in this section are identical to the Csound orchestra file, and have the same requirements, including the header statements (sr, kr, etc.) This Instruments Element is delimited with the start tag <CsInstruments> and the end tag </CsInstruments>.</p>
+<h3 id="score-csscore">Score (&lt;CsScore&gt;)</h3>
+<p>Csound score statements are put in the Score Element. The statements and syntax in this section are identical to the Csound score file, and have the same requirements. The Score Element is delimited by the start tag <CsScore> and the end tag </CsScore>.</p>
+<p>As an alternative Csound score statements can also be generated by an external program using the CsScore scheme with an attribute bin. The lines upto the closing tag </CsScore> are copied to a file and the external program named is called with that file name and the destination score file. The external program should create a standard Csound score.</p>
+<h2 id="optional-elements">Optional Elements</h2>
+<h3 id="included-base64-files-csfileb">Included Base64 Files (&lt;CsFileB&gt;)</h3>
+<p>Base64-encoded files may be included with the tag <CsFileB filename=filename>, where filename is the name of the file to be included. The Base64-encoded data should be terminated with a </CsFileB> tag. For encoding files, the csb64enc and makecsd utilities (included with Csound 5.00 and newer) can be used. The file will be extracted to the current directory, and deleted at end of performance. If there is an already existing file with the same name, it is not overwritten, but an error will occur instead.</p>
+<p>Base64-encoded MIDI files may be included with the tag <CsMidifileB filename=filename>, where filename is the name of the file containing the MIDI information. There is no matching end tag. This was added in Csound version 4.07. Note: using this tag is not recommended; use <CsFileB> instead.</p>
+<p>Base64-encoded sample files may be included with the tag <CsSampleB filename=filename>, where filename is the name of the file containing the sample. There is no matching end tag. This was added in Csound version 4.07. Note: using this tag is not recommended; use <CsFileB> instead.</p>
+<h3 id="included-unencoded-files-csfile">Included Unencoded Files (&lt;CsFile&gt;)</h3>
+<p>Unencoded files may be included with the tag <CsFile filename=filename>, where filename is the name of the file to be included. The data should be terminated with a </CsFile> tag alone on a line. The file will be extracted to the current directory, and deleted at end of performance. If there is an already existing file with the same name, it is not overwritten, but an error will occur instead.</p>
+<h3 id="version-blocking-csversion">Version Blocking (&lt;CsVersion&gt;)</h3>
+<p>Versions of Csound may blocked by placing one of the following statements between the start tag <CsVersion> and the end tag </CsVersion>:</p>
+<p>Before #.#</p>
+<p>or</p>
+<p>After #.#</p>
+<p>where #.# is the requested Csound version number. The second statement may be written simply as:</p>
+<h1 id="_1">.</h1>
+<p>This was added in Csound version 4.09.</p>
+<h3 id="licence-information-cslicence-or-cslicense">Licence Information (&lt;CsLicence&gt; or &lt;CsLicense&gt;)</h3>
+<p>Licencing details can be included in between the start tag <CsLicence> and the end tag </CsLicence>. There is no format for this information, any text is acceptable. This text will be printed by Csound to the console when the CSD is run.</p>
+<h3 id="licence-information-csshortlicence-or-csshortlicense">Licence Information (&lt;CsShortLicence&gt; or &lt;CsShortLicense&gt;)</h3>
+<p>From version 6.05 licencing details can be also included in between the start tag <CsShortLicence> and the end tag </CsShortLicence>. This offers seven well-known licences, coded as as an integer.</p>
+<p>0: "All rights reserved" (default)
+1: "Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND)"
+2: "Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)"
+3: "Creative Commons Attribution-NonCommercial (CC BY-NC)"
+4: "Creative Commons Attribution-NoDerivatives (CC BY-ND)"
+5: "Creative Commons Attribution-ShareAlike (CC BY-SA)"
+6: "Creative Commons Attribution-ShareAlike (CC BY)"
+7: "Licenced under BSD"</p>
+<h3 id="embedded-html-html">Embedded HTML (&lt;html&gt;)</h3>
+<p>Any valid HTML code can be embedded in the CSD file. This code should be structured exactly like an ordinary Web page. This code can contain any valid HTML, JavaScript, Cascading Style Sheet, WebGL, etc., etc. code.</p>
+<p>In some Csound front ends and programming environments, including at least CsoundQt or Csound for Android, this page will be parsed, executed, and displayed by a Web browser embedded in the environment. JavaScript code in this page will have access to a global csound object that implements the following functions, which are a selected subset of the Csound API. The names, data types, and uses of these functions are exactly the same as detailed in the Csound API Reference Manual.</p>
+<pre><code>[int] getVersion ();
+compileOrc (orchestra_text);
+[double] evalCode (orchestra_expression);
+readScore (score_text);
+setControlChannel (channel_name, numeric_value);
+[double] getControlChannel (channel_name);
+message (message_string);
+[int] getSr ();
+[int] getKsmps ();
+[int] getNchnls ();
+// Not a part of the Csound API -- called by the environment to detect whether Csound is running.
+[int] isPlaying ();
+</code></pre>
+<p>The HTML element of the CSD file can be used to create custom user interfaces for the piece, to generate score events and even orchestra code using JavaSscript, to store presets for widgets, and for many other purposes. The GameOfLife3D.csd and LindenmayerCanvas.csd examples demonstrate these uses (tested in CsoundQt; running these examples requires additional resources found in the Csound examples directory in GIT). </p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../invoke-how-csound-works/" class="btn btn-neutral float-left" title="How Csound Works"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../invoke-the-csound-command/" class="btn btn-neutral float-right" title="The `csound` Command">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../invoke-how-csound-works/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../invoke-the-csound-command/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

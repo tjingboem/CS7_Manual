@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Macros - Csound 7 Manual</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Macros";
+        var mkdocs_page_input_path = "sco-macros.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Csound 7 Manual
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../intro-whats-new-in-csound-7/">What's New in Csound 7</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../intro-historic-preface/">Historical Preface</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../intro-history-of-the-manual/">History of the Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../intro-copyright-notice/">Copyright Notice</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Invoking Csound</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../invoke-how-csound-works/">How Csound Works</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../invoke-the-csd-file-format/">The `.csd` File Format</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../invoke-the-csound-command/">The `csound` Command</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../invoke-cs-options-alphabetically/">Csound Options (flags) Alphabetically</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../invoke-cs-options-by-category/">Csound Options (flags) by Category</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../invoke-environment-variables/">Environment Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../invoke-order-of-precedence/">Order of Precedence</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Syntax of the Orchestra</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-header-statements/">Header Statements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-global-space/">Global Space</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-instruments/">Instruments</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-data-types/">Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-variables/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-macros/">Macros</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-user-defined-opcodes/">User Defined Opcodes (UDO)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../orc-traditional-functional-code/">Traditional and Functional Code</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Syntax of the Score</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../sco-parameter-fields/">Parameter Fields</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sco-preprocessing/">Preprocessing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sco-statements/">Statements</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Macros</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sco-included-files/">Included Files</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sco-expressions/">Expressions</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Csound 7 Manual</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Syntax of the Score</li>
+      <li class="breadcrumb-item active">Macros</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="macros">Macros</h1>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../sco-statements/" class="btn btn-neutral float-left" title="Statements"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sco-included-files/" class="btn btn-neutral float-right" title="Included Files">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../sco-statements/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../sco-included-files/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
