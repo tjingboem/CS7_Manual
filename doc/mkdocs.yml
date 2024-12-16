@@ -19,8 +19,7 @@ nav:
     - Environment Variables: 'invoke-environment-variables.md'
     - Order of Precedence: 'invoke-order-of-precedence.md'
   - Syntax of the Orchestra:
-    - Header Statements: 'orc-header-statements.md'
-    - Global Space: 'orc-global-space.md'
+    - Header Statements and Global Space: 'orc-header-statements.md'
     - Instruments: 'orc-instruments.md'
     - Data Types: 'orc-data-types.md'
     - Variables: 'orc-variables.md'
