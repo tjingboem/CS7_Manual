@@ -21,8 +21,7 @@ nav:
   - Syntax of the Orchestra:
     - Header Statements and Global Space: 'orc-header-statements.md'
     - Instruments: 'orc-instruments.md'
-    - Data Types: 'orc-data-types.md'
-    - Variables: 'orc-variables.md'
+    - Data Types and Variables: 'orc-data-types.md'
     - Macros: 'orc-macros.md'
     - User Defined Opcodes (UDO): 'orc-user-defined-opcodes.md'
     - Traditional and Functional Code: 'orc-traditional-functional-code.md'
