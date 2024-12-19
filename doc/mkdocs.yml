@@ -32,3 +32,4 @@ nav:
     - Macros: 'sco-macros.md'
     - Included Files: 'sco-included-files.md'
     - Expressions: 'sco-expressions.md'
+    - Note Event Durations: 'sco-note-durations.md'
