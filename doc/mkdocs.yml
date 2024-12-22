@@ -5,12 +5,12 @@ site_name: Csound 7 Manual
 
 nav:
   - Home: 'index.md'
-  - Introduction:
+  - Preface:
     - What's New in Csound 7: 'intro-whats-new-in-csound-7.md'
     - Historical Preface: 'intro-historic-preface.md'
     - History of the Manual: 'intro-history-of-the-manual.md'
     - Copyright Notice: 'intro-copyright-notice.md'
-  - 'Invoking Csound':
+  - Invoking Csound:
     - How Csound Works: 'invoke-how-csound-works.md'
     - The `.csd` File Format: 'invoke-the-csd-file-format.md'
     - The `csound` Command: 'invoke-the-csound-command.md'
@@ -27,9 +27,14 @@ nav:
     - Traditional and Functional Code: 'orc-traditional-functional-code.md'
   - Syntax of the Score:
     - Parameter Fields: 'sco-parameter-fields.md'
+    - Durations in Instrument Events: 'sco-note-durations.md'
     - Preprocessing: 'sco-preprocessing.md'
-    - Statements: 'sco-statements.md'
+    - List of Statements: 'sco-statements.md'
     - Macros: 'sco-macros.md'
     - Included Files: 'sco-included-files.md'
     - Expressions: 'sco-expressions.md'
-    - Note Event Durations: 'sco-note-durations.md'
+    - Scripts: 'sco-scripts.md'
+  - Miscellanea:
+    - Nomenclature: 'misc-nomenclature.md'
+    - Links: 'misc-links.md'
+    - UDP Server: 'misc-udp-server.md'

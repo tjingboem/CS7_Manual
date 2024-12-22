@@ -1,6 +1,6 @@
-# Note Event Durations
+# Instrument Event Durations
 
-The third parameter field in a note event (accessible as `p3` in the called instrument) sets the duration of the instrument instance. However, there are some notable cases and features, in particular negative duration.
+The third parameter field in an instrument event (accessible as `p3` in the called instrument) sets the duration of the instrument instance. However, there are some notable cases and features, in particular negative duration.
 
 ## Overwriting the Duration in the Instrument
 
