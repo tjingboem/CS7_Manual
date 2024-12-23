@@ -12,8 +12,8 @@ nav:
     - Copyright Notice: 'intro-copyright-notice.md'
   - Invoking Csound:
     - How Csound Works: 'invoke-how-csound-works.md'
-    - The `.csd` File Format: 'invoke-the-csd-file-format.md'
     - The `csound` Command: 'invoke-the-csound-command.md'
+    - The `.csd` File Format: 'invoke-the-csd-file-format.md'
     - Csound Options (flags) Alphabetically: 'invoke-cs-options-alphabetically.md'
     - Csound Options (flags) by Category: 'invoke-cs-options-by-category.md'
     - Environment Variables: 'invoke-environment-variables.md'
@@ -38,3 +38,4 @@ nav:
     - Nomenclature: 'misc-nomenclature.md'
     - Links: 'misc-links.md'
     - UDP Server: 'misc-udp-server.md'
+    - Real-Time Audio: 'misc-rt-audio.md'

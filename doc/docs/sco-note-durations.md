@@ -1,6 +1,6 @@
-# Instrument Event Durations
+# Durations in Instrument Events
 
-The third parameter field in an instrument event (accessible as `p3` in the called instrument) sets the duration of the instrument instance. However, there are some notable cases and features, in particular negative duration.
+The third parameter field in an instrument event (accessible as `p3` in the called instrument) sets the duration of the instrument instance. However, there are some notable cases and features.
 
 ## Overwriting the Duration in the Instrument
 
@@ -33,7 +33,7 @@ schedule(1,0,0)
 
 ### Legato or Tied Notes
 
-Basically, negative duration (usually `-1`) was introduced into Csound as feature for tied notes. If one instance is called with a negative duration, the next call will continue this instance.
+Basically, negative duration (usually `-1`) was introduced into Csound as feature for tied notes. If one instance is called with a negative duration, the next call will continue this instance rather than invoking a new instance.
 
 ```
 instr 1

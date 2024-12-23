@@ -4,14 +4,11 @@ The Orchestra Header contains global information that applies to all instruments
 
 The most essential statements given in the orchestra header are:
 
-`sr` the sample rate (default 44100)
-
+`sr` the sample rate (default 44100)  
 `ksmps` the number of samples for one control period (default 10)  
-NOTE: It is recommended to specify `ksmps` and let Csound calculate `kr`. `ksmps` must be an integer and should usually be a power of two.
-
+NOTE: It is recommended to specify `ksmps` and let Csound calculate `kr`. `ksmps` must be an integer and should usually be a power of two.  
 `nchnls` the number of audio channels (default 1)  
-NOTE: This refers to both, output and input channels. Use `nchnls_i` in case input and output do not have the same number of channels.
-
+NOTE: This refers to both, output and input channels. Use `nchnls_i` in case input and output do not have the same number of channels.  
 `0dbfs` the number which serves as amplitude value for zero dB full scale (default 32768)
 
 A standard Csound header may look like this:
@@ -20,23 +17,18 @@ A standard Csound header may look like this:
 sr = 48000
 ksmps = 32
 nchnls = 2
-0dbfs = 1```
+0dbfs = 1
+```
 
 Other common header statements:
 
-`nchnls_i` the number of input channels (if different from `nchnls`)
-
-`A4` the frequency set to pitch A4 (default 440)
-
+`nchnls_i` the number of input channels (if different from `nchnls`)  
+`A4` the frequency set to pitch A4 (default 440)  
 `seed` sets the global seed for most random generators  
-NOTE: The syntax is `seed 0` or `seed(0)` but NOT `seed = 0`
-
-`massign` assigns incoming midi to a specific instrument
-
-`pgmassign` assigns a MIDI program number to a specific instrument
-
-`ctrlinit` sets the initial values for a set of MIDI controllers
-
+NOTE: The syntax is `seed 0` or `seed(0)` but NOT `seed = 0`  
+`massign` assigns incoming midi to a specific instrument  
+`pgmassign` assigns a MIDI program number to a specific instrument  
+`ctrlinit` sets the initial values for a set of MIDI controllers  
 `ftgen` generates a function table
 
 The instrument header is part of the global space. This space continues between and after the instrument code, and is evaluated as a whole before any instrument is running. 

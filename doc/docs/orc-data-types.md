@@ -2,7 +2,7 @@
 
 ## Implicit Types
 
-Data types in Csound 6 and earlier were declared using abbreviations. These abbreviations were integrated in variables names. (Local variables have their scope in one instrument. Global variables can be accessed and altered in any instrument or in the global space.)
+Data types in Csound 6 and earlier were declared one of the characters *i, k, a, S, w* as first character of the variable name. This applied for local variables which are only valid in the scope of an instrument. For global variables these type specifiers were prefixed by the *g* character.
 
 | Local | Global | Data type | Updated at | Examples
 | ------ | --------- | --------- | ---------- | ------- |
@@ -21,10 +21,24 @@ Data types in Csound 6 and earlier were declared using abbreviations. These abbr
 In Csound 7 the data type can be given explicitely, without being bound to the name. 
 
 ```
-freq:i = 442
-amp:k = linen:k(1,.1,p3,.1)
-sine:a = poscil:a(.2,400)
-[CONTINUE]
+nchnls	=	2
+0dbfs	=	1
+
+instr 1
+  freq:i = 442
+  amp:k = linen:k(1,.1,p3,.1)
+  sine:a = poscil:a(.2,freq)
+  outch(1,sine*amp)
+  dB@global:i = -6
+  env@global:k = linseg(1,p3,0)
+  tri@global:a = vco2(.3,200)
+endin
+schedule(1,0,3)
+
+instr 2
+  outch(2,tri*ampdb(dB)*env)
+endin
+schedule(2,0,3)
 ```
 
 ## Constants and Reserved Symbols

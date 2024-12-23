@@ -10,4 +10,22 @@ The implementation is described in detail in the manual page for `opcode` (link 
 
 ## New style UDO definition
 
-(to be written, including the pass-by-reference as distinction to old style UDOs)
+User Defined Opcodes now follow the syntax `opcode name(inargs):(outargs)`. 
+
+```
+opcode myop(inval:i):(i)
+  xout(inval+1)
+endop
+
+opcode empty():void
+  puts("empty!",1)
+endop
+
+instr 1
+  print(myop(17))
+  empty()
+endin
+schedule(1,0,0
+```
+
+Give example for pass-by-reference as difference to old style UDOs.

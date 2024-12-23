@@ -10,10 +10,16 @@ The functional way of writing Csound code sets an equal sign between output(s) a
 
 `aLeft,aRight = pan2:a(aSig,0.5)`
 
-In the case of `pan2` the `:a` can be omitted because `pan2` only has this a-rate version. Other opcodes have different rates so that specifying the rate is mandatory. 
+In the case of `pan2` the `:a` can be omitted because `pan2` only has this a-rate version. Other opcodes have different rates so that specifying the rate is mandatory in Csound 6. 
 
 ```
 aSig = oscili:a(0.2,400)
 kSig = oscili:k(10,0.5)
 ```
 
+In Csound 7, the parser selects the appropriate rate by the output variable so that this code is fine, too:
+
+```
+aSig = oscili(0.2,400)
+kSig = oscili(10,0.5)
+```

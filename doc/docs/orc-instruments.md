@@ -150,7 +150,7 @@ instr 10:	time     0.00000:     5.00000
 
 ## Instances and Events
 
-Instrument code gets loaded into the audio engine as *instances*. Instances can be loaded simultaneously or sequentially without and predefined limit. 
+Instrument code gets loaded into the audio engine as *instances*. Instances can be loaded simultaneously or sequentially without any predefined limit. 
 
 Instances are called by *events*. These *instrument events* can originate from different sources:  
 1. The standard numeric score as in `i 1 0 1`  

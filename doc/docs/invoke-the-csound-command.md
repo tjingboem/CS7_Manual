@@ -2,11 +2,11 @@
 
 When Csound is installed, the command `csound` serves as a basic frontend which can be invoked from a Terminal or DOS window. The syntax is
 
-`csound [options] [.csd file]`
+`csound [options] .csd_file`
 
 or 
 
-`csound [options] [.orc file] [.sco file]`
+`csound [options] .orc_file .sco_file`
 
 Rather than *options* the term *flags* is used frequently.
 
@@ -17,3 +17,5 @@ This command will execute the file "test.csd" (located in the current directory)
 This command will execute the file "bla.csd" in the parent directory and render the output to the 32-bit floating-point sound file "bla.wav":
 
 `csound -o bla.wav -f ../bla.csd`
+
+All options are listed in [Options Alphabetically](https://csound.com/manual/CommandFlags.html) or [Options by Category](https://csound.com/manual/CommandFlagsCategory.html).
