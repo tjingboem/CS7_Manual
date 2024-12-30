@@ -4,7 +4,7 @@ Csound is a unit generator-based, user-programmable computer music system. It wa
 
 The initial version of this manual for early versions of Csound was started at MIT by Barry L. Vercoe and maintained there during the 1980's and start of the 1990's. Parts of the manual come from documents for programs like Music11 from the 1970's. This original manual was improved and worked on by Richard Boulanger, John ffitch, Jean Piché and Rasmus Ekman.
 
-This manual led to the Official Csound Reference Manual. Version 3.47 is still accessible at [Cecilia's Sourceforge repository](https://cecilia.sourceforge.net/csman/TITLE.html). Version 4.10 maintained by David M. Boothe is accessible at [MIT archive](https://web.mit.edu/~mcanulty/Public/manual.pdf).
+This manual led to the Official Csound Reference Manual. Version 3.47 is still accessible at [Cecilia's Sourceforge repository](https://cecilia.sourceforge.net/csman/TITLE.html). Version 4.10, maintained by David M. Boothe, is accessible at [MIT archive](https://web.mit.edu/~mcanulty/Public/manual.pdf).
 
 A parallel version of the manual called the Alternative Csound Reference Manual, was developed by Kevin Conder using DocBook/SGML. This version later became the Canonical version.
 
