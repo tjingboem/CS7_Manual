@@ -35,7 +35,7 @@ instr 1
   print(myop(17))
   empty()
 endin
-schedule(1,0,0
+schedule(1,0,0)
 ```
 
 Give example for pass-by-reference ...
