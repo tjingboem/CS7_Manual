@@ -13,7 +13,7 @@ The p-fields have different meanings in the different statements. In the example
 
 ## P-Fields in Instrument Events
 
-Instrument events starting with the character **i** are by far the most important score statements. In fact, the score is a collection of instrument calls plus some extra statements to ease the control and overview for large scores.
+Instrument events starting with the character **i** are by far the most important score statements. In fact, the score is a collection of instrument calls plus some extra statements to ease the control and overview for larger scores.
 
 For each instrument event, the first three parameters are mandatory and carry a fixed meaning:
 
