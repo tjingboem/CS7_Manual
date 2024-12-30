@@ -22,6 +22,9 @@ If the *Options* element is missing, the default options will be used:
 ### Orchestra `<CsInstruments>`
 
 The instrument definitions (orchestra) are put into the *Instruments* element. The statements and syntax in this section are identical to the Csound orchestra file, and have the same requirements. This Instruments Element is delimited with the start tag `<CsInstruments>` and the end tag `</CsInstruments>`.
+ADD: If the sample rate elements are missing, the default options will be used:
+
+sr=44100 ksmps=32 nchnls=2 END ADD
 
 ### Score `<CsScore>`
 
