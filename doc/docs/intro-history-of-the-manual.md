@@ -1,6 +1,6 @@
 # History of the Canonical Csound Reference Manual
 
-Csound is a unit generator-based, user-programmable computer music system. It was originally written by Barry Vercoe at the Massachusetts Institute of Technology in 1984 as the first C language version of this type of software. Since then Csound has received numerous contributions from researchers, programmers, and musicians from around the world.
+Csound is a unit generator-based, user-programmable computer music system. It was originally written by Barry Vercoe at the Massachusetts Institute of Technology in 1984 as the first C language version of this type of software. Since then, Csound has received numerous contributions from researchers, programmers, and musicians from around the world.
 
 The initial version of this manual for early versions of Csound was started at MIT by Barry L. Vercoe and maintained there during the 1980's and start of the 1990's. Some of the manual comes from documents for programs like Music11 from the 1970's. This original manual was improved and worked on by Richard Boulanger, John ffitch, Jean Piché and Rasmus Ekman.
 
