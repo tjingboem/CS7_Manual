@@ -9,7 +9,8 @@ The most essential statements given in the orchestra header are:
 NOTE: It is recommended to specify `ksmps` and let Csound calculate `kr`. `ksmps` must be an integer and should usually be a power of two.  
 `nchnls` the number of audio channels (default 1)  
 NOTE: This refers to both, output and input channels. Use `nchnls_i` in case input and output do not have the same number of channels.  
-`0dbfs` the number which serves as amplitude value for zero dB full scale (default 32768)
+`0dbfs` the number which serves as amplitude value for zero dB full scale (default 32768).  
+NOTE: It is recommended to set `0dbfs` to 1 as this is the standard in all audio applications nowadays.
 
 A standard Csound header may look like this:
 
@@ -33,4 +34,9 @@ NOTE: The syntax is `seed 0` or `seed(0)` but NOT `seed = 0`
 
 The instrument header is part of the global space. This space continues between and after the instrument code, and is evaluated as a whole before any instrument is running. 
 
-MACRO???
+Typical statements in the global space other than the orchestra header are:  
+- User Defined Opcode definitions  
+- Macro definitions  
+- `#include` statements for external files  
+- setting or initializing global variables, e.g. `gaReverb init 0`  
+- declaring software channels, e.g. `chn_k("watchdog",3)`  
