@@ -9,4 +9,4 @@ Throughout this manual, opcodes are indicated in **boldface** and their argument
 
 All arguments, unless otherwise stated, can be expressions whose results conform to the above. Most opcodes (such as `linen` and `oscili`) can be used in more than one mode, which one being determined by the prefix of the result symbol.
 
-Thoughout this manual, the term "opcode" is used to indicate a command that usually produces an a-, k-, or i-rate output, and always forms the basis of a complete Csound orchestra statement. Items such as `+` or `sin(x)` or, `( a >= b ? c : d)` are called "operators".
+Thoughout this manual, the term "opcode" is used to indicate a command that usually produces an a-, k-, i-rate OR F- output, and always forms the basis of a complete Csound orchestra statement. Items such as `+` or `sin(x)` or, `( a >= b ? c : d)` are called "operators".
