@@ -18,7 +18,7 @@
 - MFDIR: Default directory for MIDI files. Used if no full path is given for MIDI files. Please note that MIDI files are sought in SSDIR and SFDIR as well.  
 - CS_OMIT_LIBS: Allows defining a list of plugin libraries that should be skipped. Libraries can be separated with commas, and don't require the "lib" prefix.
 
-The only mandatory environment variables are OPCODE7DIR and OPCODE7DIR64. It is very important to set them correctly, otherwise most of the opcodes will not be available. Make sure you set the path correctly depending on the precision of your binary. 
+The only mandatory environment variables are OPCODE7DIR and OPCODE7DIR64. It is very important to set them correctly, otherwise most of the opcodes will not be available. Make sure you set the path correctly depending on the precision of your binary. YOU MEAN 64 OR 32 BIT? IS 32 STILL AVAILABLE FOR DOWNLOAD??
 
 Other environment variables which are not exclusive to Csound but which might be of importance are:
 
