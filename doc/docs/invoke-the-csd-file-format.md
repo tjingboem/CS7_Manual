@@ -13,7 +13,7 @@ The first tag in the file must be the start tag `<CsoundSynthesizer>`. The last 
 
 ### Options `<CsOptions>`
 
-Csound command line flags are put in the *Options* element. This section is delimited by the start tag `<CsOptions>` and the end tag `</CsOptions>`. Lines beginning with `;` or `//` (or `#`) are treated as comments.
+Csound command line flags are put in the *Options* element. This section is delimited by the start tag `<CsOptions>` and the end tag `</CsOptions>`. Lines beginning with `;` or `//` or `#` are treated as comments.
 
 If the *Options* element is missing, the default options will be used:
 
