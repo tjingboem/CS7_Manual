@@ -2,14 +2,14 @@
 
  The following environment variables ARE AVAILABLE:
 
-- SFDIR: Default directory for sound files. Used if no full path is given for sound files.  
-- SSDIR: Default directory for input (source) audio and MIDI files. NEVER UNDERSTOOD DIFFERENCE BETWEEN SOUND FILES AND INPUT AUDIO FILES...Used if no full path is given for sound files. May be used in conjunction with SFDIR to set separate input and output directories. Please note that MIDI files as well as audio files are also sought inside SSDIR.  
+- SFDIR: Default directory for rendered sound files. Used if no full path is given for output sound files.  
+- SSDIR: Default directory for input (source) audio and MIDI files. Used if no full path is given for sound files. May be used in conjunction with SFDIR to set separate input and output directories. Please note that MIDI files as well as audio files are also sought inside SSDIR.  
 - SADIR: Default directory for analysis files. Used if no full path is given for analysis files.  
 - SFOUTYP: Sets the default output file type. Currently only 'WAV', 'AIFF' and 'IRCAM' are valid. This flag is checked by the csound executable and the utilities and is used if no file output type is specified.  
 - INCDIR: Include directory. Specifies the location of files used by #include statements.  
-- OPCODE6DIR: Defines the location of csound opcode plugins for the single precision float (32-bit) version.  
-- OPCODE6DIR64: Defines the location of csound opcode plugins for the double precision float (64-bit) version.  
-- SNAPDIR: Is used by the FLTK widget opcodes when loading and saving snapshots.  
+- OPCODE7DIR: Defines the location of csound opcode plugins for the single precision float (32-bit) version.  
+- OPCODE7DIR64: Defines the location of csound opcode plugins for the double precision float (64-bit) version.  
+- SNAPDIR: Is used by the FLTK widget opcodes when loading and saving snapshots (deprecated).  
 - CSOUND7RC: Defines the csound resource (or configuration) file. A full path and filename containing csound flags must be specified. This variable defaults to .csound7rc if not present.  
 - CSSTRNGS: In Csound 5.00 and later versions, the localisation of messages is controlled by two environment variables CSSTRNGS and CS_LANG, both of which are optional. CSSTRNGS points to a directory containing .xmg files.  
 - CS_LANG: Selects a language for csound messages.  
@@ -18,7 +18,7 @@
 - MFDIR: Default directory for MIDI files. Used if no full path is given for MIDI files. Please note that MIDI files are sought in SSDIR and SFDIR as well.  
 - CS_OMIT_LIBS: Allows defining a list of plugin libraries that should be skipped. Libraries can be separated with commas, and don't require the "lib" prefix.
 
-The only mandatory environment variables are OPCODE7DIR and OPCODE7DIR64. It is very important to set them correctly, otherwise most of the opcodes will not be available. Make sure you set the path correctly depending on the precision of your binary. YOU MEAN 64 OR 32 BIT? IS 32 STILL AVAILABLE FOR DOWNLOAD??
+The only mandatory environment variables are OPCODE7DIR and OPCODE7DIR64. It is very important to set them correctly, otherwise most of the opcodes will not be available. Make sure you set the path correctly depending on the precision of your binary. (Nowadays it will almost always be 64 bit, so OPCODE7DIR64.)
 
 Other environment variables which are not exclusive to Csound but which might be of importance are:
 
