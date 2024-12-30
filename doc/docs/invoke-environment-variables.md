@@ -3,7 +3,7 @@
  The following environment variables ARE AVAILABLE:
 
 - SFDIR: Default directory for sound files. Used if no full path is given for sound files.  
-- SSDIR: Default directory for input (source) audio and MIDI files. Used if no full path is given for sound files. May be used in conjunction with SFDIR to set separate input and output directories. Please note that MIDI files as well as audio files are also sought inside SSDIR.  
+- SSDIR: Default directory for input (source) audio and MIDI files. NEVER UNDERSTOOD DIFFERENCE BETWEEN SOUND FILES AND INPUT AUDIO FILES...Used if no full path is given for sound files. May be used in conjunction with SFDIR to set separate input and output directories. Please note that MIDI files as well as audio files are also sought inside SSDIR.  
 - SADIR: Default directory for analysis files. Used if no full path is given for analysis files.  
 - SFOUTYP: Sets the default output file type. Currently only 'WAV', 'AIFF' and 'IRCAM' are valid. This flag is checked by the csound executable and the utilities and is used if no file output type is specified.  
 - INCDIR: Include directory. Specifies the location of files used by #include statements.  
