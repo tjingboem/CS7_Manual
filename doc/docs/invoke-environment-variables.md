@@ -1,9 +1,9 @@
 # Environment variables
 
- The following environment variables can be used by Csound:
+ The following environment variables ARE AVAILABLE:
 
 - SFDIR: Default directory for sound files. Used if no full path is given for sound files.  
-- SSDIR: Default directory for input (source) audio and MIDI files. Used if no full path is given for sound files. May be used in conjunction with SFDIR to set separate input and output directories. Please note that MIDI files as well as audio files are also sought inside SSDIR.  
+- SSDIR: Default directory for input (source) audio and MIDI files. NEVER UNDERSTOOD DIFFERENCE BETWEEN SOUND FILES AND INPUT AUDIO FILES...Used if no full path is given for sound files. May be used in conjunction with SFDIR to set separate input and output directories. Please note that MIDI files as well as audio files are also sought inside SSDIR.  
 - SADIR: Default directory for analysis files. Used if no full path is given for analysis files.  
 - SFOUTYP: Sets the default output file type. Currently only 'WAV', 'AIFF' and 'IRCAM' are valid. This flag is checked by the csound executable and the utilities and is used if no file output type is specified.  
 - INCDIR: Include directory. Specifies the location of files used by #include statements.  
@@ -18,7 +18,7 @@
 - MFDIR: Default directory for MIDI files. Used if no full path is given for MIDI files. Please note that MIDI files are sought in SSDIR and SFDIR as well.  
 - CS_OMIT_LIBS: Allows defining a list of plugin libraries that should be skipped. Libraries can be separated with commas, and don't require the "lib" prefix.
 
-The only mandatory environment variables are OPCODE7DIR and OPCODE7DIR64. It is very important to set them correctly, otherwise most of the opcodes will not be available. Make sure you set the path correctly depending on the precision of your binary. 
+The only mandatory environment variables are OPCODE7DIR and OPCODE7DIR64. It is very important to set them correctly, otherwise most of the opcodes will not be available. Make sure you set the path correctly depending on the precision of your binary. YOU MEAN 64 OR 32 BIT? IS 32 STILL AVAILABLE FOR DOWNLOAD??
 
 Other environment variables which are not exclusive to Csound but which might be of importance are:
 

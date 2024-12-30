@@ -2,7 +2,7 @@
 
 Since Csound 6 it is possible to write Csound orchestra code in functional style. Csound 7 removed some limitations so that now both ways of Csound code can be used universally.
 
-The traditional way of writing Csound code has the output of an opcode left of the opcode name, separated by a space or tab. If there are several outputs, they are separated by commas. The input argument is written right hand side of the opcode name, saparated by a space or tab. If there are several inputs, they are separated by commas.
+The traditional way of writing Csound code has the output of an opcode left of the opcode name, separated by a space or tab. If there are several outputs, they are separated by commas. The input argument is written AT THE right hand side of the opcode name, saparated by a space or tab. If there are several inputs, they are separated by commas.
 
 `aLeft,aRight pan2 aSig,0.5`
 

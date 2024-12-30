@@ -1,6 +1,6 @@
 # Parameter Fields
 
-The standard numeric score consists of lines where each line represents a single statements. Each statement begins with a character denoting the type of statement, followed by a number of parameters which specify this statement. Parameters are separated by spaces or tabs. The parameter fields (p-fields) are numbered and abbreviated as *p1, p2, p3, ...*
+The standard numeric score consists of lines where each line represents a single statement. Each statement begins with a character denoting the type of statement, followed by a number of parameters specifying this statement. Parameters are separated by spaces or tabs. The parameter fields (p-fields) are numbered and abbreviated as *p1, p2, p3, ...*
 
 | Char | p1 | p2 | p3 | p4 | p5 | p6 | Type of statement |
 | ---- | -- | -- | -- | -- | -- | -- | -- |
@@ -13,7 +13,7 @@ The p-fields have different meanings in the different statements. In the example
 
 ## P-Fields in Instrument Events
 
-Instrument events starting with the character **i** are by far the most important score statements. In fact, the score is a collection of instrument calls plus some extra statements to ease the control and overview for large scores.
+Instrument events starting with the character **i** are by far the most important score statements. In fact, the score is a collection of instrument calls plus some extra statements to ease the control and overview for larger scores.
 
 For each instrument event, the first three parameters are mandatory and carry a fixed meaning:
 

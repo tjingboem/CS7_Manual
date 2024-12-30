@@ -32,3 +32,5 @@ NOTE: The syntax is `seed 0` or `seed(0)` but NOT `seed = 0`
 `ftgen` generates a function table
 
 The instrument header is part of the global space. This space continues between and after the instrument code, and is evaluated as a whole before any instrument is running. 
+
+MACRO???
