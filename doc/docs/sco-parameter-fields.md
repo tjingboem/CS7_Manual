@@ -1,6 +1,6 @@
 # Parameter Fields
 
-The standard numeric score consists of lines where each line represents a single statement. Each statement begins with a character denoting the type of statement, followed by a number of parameters which specify this statement. Parameters are separated by spaces or tabs. The parameter fields (p-fields) are numbered and abbreviated as *p1, p2, p3, ...*
+The standard numeric score consists of lines where each line represents a single statement. Each statement begins with a character denoting the type of statement, followed by a number of parameters specifying this statement. Parameters are separated by spaces or tabs. The parameter fields (p-fields) are numbered and abbreviated as *p1, p2, p3, ...*
 
 | Char | p1 | p2 | p3 | p4 | p5 | p6 | Type of statement |
 | ---- | -- | -- | -- | -- | -- | -- | -- |
