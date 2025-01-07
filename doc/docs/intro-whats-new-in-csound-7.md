@@ -6,7 +6,7 @@ Csound 7 brings major changes which offer new possibilities for users and modern
 
 Variable names no longer have to start with `i`, `k`, `a` etc. to declare their data type implicitely. Instead any name (except existing opcodes or keywords) can be used, and the type declared explicitely:
 
-```
+```csound-orc
 maxamp@global:i = 0dbfs / 5
 
 instr 1
@@ -22,7 +22,7 @@ schedule(1,0,2)
 
 User Defined Opcodes now follow the syntax `opcode name(inargs):(outargs)`. 
 
-```
+```csound-orc
 opcode myop(inval:i):(i)
   xout(inval+1)
 endop
@@ -44,7 +44,7 @@ Give example for pass-by-reference ...
 
 Multiple output arguments can now be used in functional style, e.g.
 
-```
+```csound-orc
 nchnls = 2
 instr 1
   sig:a = rand(0dbfs/10)
@@ -60,7 +60,7 @@ Is it going to happen??
 
 ## User-Defined Types
 
-```
+```csound-orc
 struct MyType val0:i, val1:i
 
 instr 1
