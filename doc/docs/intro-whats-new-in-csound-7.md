@@ -6,7 +6,7 @@ Csound 7 brings major changes which offer new possibilities for users and modern
 
 Variable names no longer have to start with `i`, `k`, `a` etc. to declare their data type implicitely. Instead any name (except existing opcodes or keywords) can be used, and the type declared explicitely:
 
-```csound-orc
+```csound-orc title="Explicit Varaible Types" linenums="1"
 maxamp@global:i = 0dbfs / 5
 
 instr 1
