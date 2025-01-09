@@ -65,3 +65,5 @@ nav:
     - Links: 'misc-links.md'
     - UDP Server: 'misc-udp-server.md'
     - Real-Time Audio: 'misc-rt-audio.md'
+  - Opcodes:
+    - A4: A4.md
