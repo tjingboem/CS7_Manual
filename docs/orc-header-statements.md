@@ -14,7 +14,7 @@ NOTE: It is recommended to set `0dbfs` to 1 as this is the standard in all audio
 
 A standard Csound header may look like this:
 
-```
+``` csound-orc
 sr = 48000
 ksmps = 32
 nchnls = 2
@@ -24,7 +24,7 @@ nchnls = 2
 Other common header statements:
 
 `nchnls_i` the number of input channels (if different from `nchnls`)  
-`A4` the frequency set to pitch A4 (default 440)  
+[`A4`](opcodes/A4.md) the frequency set to pitch A4 (default 440)  
 `seed` sets the global seed for most random generators  
 NOTE: The syntax is `seed 0` or `seed(0)` but NOT `seed = 0`  
 `massign` assigns incoming midi to a specific instrument  
