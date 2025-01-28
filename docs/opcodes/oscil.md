@@ -2,7 +2,7 @@
 id:oscil
 category:Signal Generators:Basic Oscillators
 -->
-#oscil
+# **oscil**
 oscil - A simple oscillator without any interpolation.  
 ###Description
 _oscil_ reads table _ifn_ sequentially and repeatedly at a frequency _xcps_. The amplitude is scaled by _xamp_.  

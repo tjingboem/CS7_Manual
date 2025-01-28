@@ -2,7 +2,7 @@
 id:oscili
 category:Signal Generators:Basic Oscillators
 -->
-# oscili
+# **oscili**
 oscili - A simple oscillator with linear interpolation.  
 
 ## Description

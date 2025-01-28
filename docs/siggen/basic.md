@@ -1,4 +1,6 @@
-### Basic Oscillators
+# **Basic Oscillators**
+
+## Basic Oscillators
 The basic oscillator opcodes are: (note that opcodes that end with 'i' implement linear interpolation and those that end with '3' implement cubic interpolation).
 
 - Oscillator Banks: [oscbnk](../../opcodes/oscbnk)
@@ -9,7 +11,7 @@ The basic oscillator opcodes are: (note that opcodes that end with 'i' implement
 
 Oscillators can also be constructed from generic table read opcodes. See the [Table Read/Write operations](../../table/readwrit) section.
 
-### LFOs
+## LFOs
 
 - [lfo](../../opcodes/lfo)
 - [vibr](../../opcodes/vibr)

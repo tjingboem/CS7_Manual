@@ -2,7 +2,7 @@
 id:oscil3
 category:Signal Generators:Basic Oscillators
 -->
-# oscil3
+# **oscil3**
 oscil3 - A simple oscillator with cubic interpolation.  
 
 ## Description
