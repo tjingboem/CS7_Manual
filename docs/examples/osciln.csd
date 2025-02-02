@@ -16,7 +16,7 @@ nchnls = 2
 gione ftgen 1, 0, 1024, 7, 0, 1,   1, 1024, 0
 gitwo ftgen 2, 0, 1024, 7, 0, 512, 1, 512,  0
 
-instr 1	;very simple waveguide system
+instr 1 ;very simple waveguide system
 
 ifn     = p4
 ipitch  = p5
@@ -34,11 +34,11 @@ endin
 </CsInstruments>
 <CsScore>
 
-i 1 0  4 1 110 1	;use different tables,
-i 1 5  4 2 110 1	;& different pitch
-i 1 10 4 1 110 10	;& different number of times the table is read
+i 1 0  4 1 110 1    ;use different tables,
+i 1 5  4 2 110 1    ;& different pitch
+i 1 10 4 1 110 10   ;& different number of times the table is read
 i 1 15 4 2 110 10
-i 1 20 6 1 880 1	
+i 1 20 6 1 880 1
 i 1 25 3 2 880 1
 i 1 30 3 1 880 10
 i 1 35 3 2 880 10

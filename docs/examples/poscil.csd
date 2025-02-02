@@ -18,10 +18,10 @@ gisine ftgen 0, 0, 2^10, 10, 1
 
 instr 1
 
-ipeak random 0, 1 		;where is the envelope peak
+ipeak random 0, 1                ;where is the envelope peak
 asig  poscil .8, 220, gisine
 aenv  transeg 0, p3*ipeak, 6, 1, p3-p3*ipeak, -6, 0
-aL,aR pan2 asig*aenv, ipeak	;pan according to random value
+aL,aR pan2 asig*aenv, ipeak      ;pan according to random value
       outs aL, aR
 
 endin
