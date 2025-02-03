@@ -72,6 +72,9 @@ nav:
     - Real-Time Audio: 'misc-rt-audio.md'
   - Opcodes Overview:
     - Signal Generators:
+      - Additive Synthesis/Resynthesis: 'siggen/additive.md'
       - Basic Oscillators: 'siggen/basic.md'
       - Dynamic Spectrum Oscillators: 'siggen/dynamic.md'
       - Table Access: 'siggen/tableacc.md'
+      - FM Synthesis: 'siggen/fmsynth.md'
+      
