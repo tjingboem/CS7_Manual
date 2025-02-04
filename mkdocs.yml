@@ -78,4 +78,6 @@ nav:
       - Dynamic Spectrum Oscillators: 'siggen/dynamic.md'
       - FM Synthesis: 'siggen/fmsynth.md'
       - Granular Synthesis: 'siggen/granular.md'
+      - Hyper Vectorial Synthesis: 'siggen/hvs.md'
+      - Linear and Exponential Generators: 'siggen/lineexp.md'
       - Table Access: 'siggen/tableacc.md'
