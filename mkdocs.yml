@@ -80,4 +80,5 @@ nav:
       - Granular Synthesis: 'siggen/granular.md'
       - Hyper Vectorial Synthesis: 'siggen/hvs.md'
       - Linear and Exponential Generators: 'siggen/lineexp.md'
+      - Models and Emulations: 'siggen/models.md'
       - Table Access: 'siggen/tableacc.md'

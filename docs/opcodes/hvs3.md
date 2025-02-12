@@ -6,12 +6,13 @@ category:Signal Generators:Hyper Vectorial Synthesis
 Allows three-dimensional Hyper Vectorial Synthesis (HVS) controlled by externally-updated k-variables.
 
 ## Syntax
-```csound-orc
+``` csound-orc
 hvs3 kx, ky, kz, inumParms, inumPointsX, inumPointsY, inumPointsZ, iOutTab, \
      iPositionsTab, iSnapTab [, iConfigTab]
 ```
 
 ### Initialization
+
 _inumParms_ - number of parameters controlled by the HVS. Each HVS snapshot is made up of _inumParms_ elements.
 
 _inumPointsX_, _inumPointsY_, _inumPointsZ_ - number of points that each dimension of the HVS cube (or square in case of two-dimensional HVS; or line in case of one-dimensional HVS) is made up.
@@ -25,6 +26,7 @@ _iSnapTab_ – a table filled with all the snapshots. Each snapshot is made up o
 _iConfigTab_ – (optional) a table containing the behavior of the HVS for each parameter. If the value of _iConfigTab_ is zero (default), this argument is ignored, meaning that each parameter is treated with linear interpolation by the HVS. If _iConfigTab_ is different than zero, then it must refer to an existing table whose contents are in its turn referring to a particolar kind of interpolation. In this table, a value of -1 indicates that corresponding parameter is leaved unchanged (ignored) by the HVS; a value of zero indicates that corresponding parameter is treated with linear-interpolation; each other values must be integer numbers indicating an existing table filled with a shape which will determine the kind of special interpolation to be used (table-based interpolation).
 
 ### Performance
+
 _kx, ky, kz_ -  these are externally-modified variables which controls the motion of the pointer in the HVS matrix cube (or square or line in case of HVS matrices made up of less than 3 dimensions). The range of these input arguments must be 0 to 1.
 
 Hyper Vectorial Synthesis is a technique that allows control of a huge set of parameters by using a simple and global approach. The key concepts of the HVS are:
@@ -35,10 +37,10 @@ The HVS cube (or square or line). This is the matrix (of 3, 2 or 1 dimensions, a
 
 For the 2-dimensional HVS, it is the same, by only omitting the rear cube face, so each zone is bounded by 4 pivot-points instead of 8. For the 1-dimensional HVS, the whole thing is even simpler because it is a line with the pivot-points proceeding from left to right. Each point is coupled with a snapshot.
 
-Snapshot order, as stored into the _iSnapTab_, can or cannot follow the order of the pivot-points numbers. In fact it is possible to alter this order by means the _iPositionsTab_, a table that remaps the position of each snapshot in relation to the pivot points. The _iPositionsTab_ is made up of the positions of the snapshots (contained in the _iSnapTab_) in the two-dimensional grid. Each subsequent element is actually a pointer representing the position in the _iSnapTab_. For example, in a 2-dimensional HVS matrix such as the following (in this case having _inumPointsX_ = 3 and _inumPointsY_ = 5):
+Snapshot order, as stored into the _iSnapTab_, can or cannot follow the order of the pivot-points numbers. In fact it is possible to alter this order by means the _iPositionsTab_, a table that remaps the position of each snapshot in relation to the pivot points. The _iPositionsTab_ is made up of the positions of the snapshots (contained in the _iSnapTab_) in the two-dimensional grid. Each subsequent element is actually a pointer representing the position in the _iSnapTab_. For example, in a 2-dimensional HVS matrix such as the following (in this case having _inumPointsX_ = 3 and _inumPointsY_ = 5:
 
 |   |   |   |
-|:-:|:-:|:-:|
+|---|---|---|
 | 5 | 7 | 1 |
 | 3 | 4 | 9 |
 | 6 | 2 | 0 |
@@ -49,14 +51,16 @@ These numbers (to be stored in the _iSnapTab_ table by using, for instance, the 
 
 Output values of the HVS are influenced by the motion pointer, a point whose position, in the HVS cube (or square or segment) is determined by the _kx_, _ky_ and _kz_ arguments. The values of these arguments, which must be in the 0 to 1 range, are externally set by the user. The output values, whose amount is equal to the _inumParms_ argument, are stored in the _iOutTab_, a table that must be already allocated by the user, and must be at least _inumParms_ size. In what way the motion pointer influences the output? Well, when the motion pointer falls in a determinate cubed zone, delimited, for instance, by 8 vertices (or pivot points), we assume that each vertex has associated a different snapshot (i.e. a set of _inumParms_ values), well, the output will be the weighted average value of the 8 vertices, calculated according on the distance of the motion pointer from each of the 8 vertices. In the case of a default behavior, when the _iConfigTab_ argument is not set, the exact output is calculated by using linear interpolation which is applied to each different parameter of the HVS. Anyway, it is possible to influence this behavior by setting the _iConfigTab_ argument to a number of a table whose contents can affect one or more HVS parameters. The _iConfigTab_ table elements are associated to each HVS parameter and their values affect the HVS output in the following way:
 
-  * If _iConfigTab_ is equal to -1, corresponding output is skipped, i.e. the element is not calculated, leaving corresponding element value in the _iOutTab_ unchanged;  
-  * If _iConfigTab_ is equal to zero, then the normal HVS output is calculated (by using weighted average of the nearest vertex of current zone where it falls the motion pointer);  
-  * If _iConfigTab_ element is equal to an integer number > zero, then the contents of a table having that number is used as a shape of a table-based interpolation.  
+*   If _iConfigTab_ is equal to -1, corresponding output is skipped, i.e. the element is not calculated, leaving corresponding element value in the _iOutTab_ unchanged;
+*   If _iConfigTab_ is equal to zero, then the normal HVS output is calculated (by using weighted average of the nearest vertex of current zone where it falls the motion pointer);
+*   If _iConfigTab_ element is equal to an integer number > zero, then the contents of a table having that number is used as a shape of a table-based interpolation.
 
 ## See also
+
 [Hyper Vectorial Synthesis](../../siggen/hvs)
 
 ## Credits
+
 Author: Gabriel Maldonado
 
 New in version 5.06

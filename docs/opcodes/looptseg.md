@@ -8,16 +8,18 @@ Generate control signal consisting of exponential or linear segments delimited b
 The entire envelope is looped at _kfreq_ rate. Each parameter can be varied at k-rate.
 
 ## Syntax
-```csound-orc
+``` csound-orc
 ksig looptseg kfreq, ktrig, iphase, kvalue0, ktype0, ktime0, [, kvalue1] \
               [,ktype1] [, ktime1] [, kvalue2] [,ktype2] [, ktime2] [...] \
               [, kvalueN] [,ktypeN] [, ktimeN]
 ```
 
 ### Initialization
+
 _iphase_ -- A value between 0 and 1 to say where to start the loop.  Zero, the commonest value, indicates the beginning.
 
 ### Performance
+
 _ksig_ -- Output signal.
 
 _kfreq_ -- Repeat rate in Hz or fraction of Hz.
@@ -39,15 +41,19 @@ Actually, the real envelope duration in seconds is determined by _kfreq_. Again,
 All parameters can be varied at k-rate.  Negative frequency values are allowed, reading the envelope backward.  _ktime0_ should always be set to 0, except if the user wants some special effect.
 
 ## Examples
+
 Here is an example of the looptseg opcode. It uses the file [looptseg.csd](../../examples/looptseg.csd).
+
 ``` csound-orc title="Example of the looptseg opcode." linenums="1"
 --8<-- "examples/looptseg.csd"
 ```
 
 ## See also
+
 [Linear and Exponential Generators](../../siggen/lineexp)
 
 ## Credits
+
 Author: John ffitch
 
 New in Version 5.12

@@ -8,12 +8,13 @@ Constructs a user-definable envelope with extended release segment.
 It is the same as [transeg](../../opcodes/transeg), with an extended release segment.
 
 ## Syntax
-```csound-orc
+``` csound-orc
 ares transegr ia, idur, itype, ib [, idur2] [, itype] [, ic] ...
 kres transegr ia, idur, itype, ib [, idur2] [, itype] [, ic] ...
 ```
 
 ### Initialization
+
 _ia_ -- starting value.
 
 _ib, ic,_ etc. -- value after _idur_ seconds.
@@ -29,21 +30,26 @@ ibeg + (ivalue - ibeg) * (1 - exp( i*itype/(n-1) )) / (1 - exp(itype))
 ```
 
 ### Performance
-If _itype_ > 0, there is a slowly rising (concave) or slowly decaying (convex) curve, while if _itype_ < 0, the curve is fast rising (convex) or fast decaying (concave). See also [GEN16](../../scoregens/gen16).
-  
+
+If _itype_ &gt; 0, there is a slowly rising (concave) or slowly decaying (convex) curve, while if _itype_ &lt; 0, the curve is fast rising (convex) or fast decaying (concave). See also [GEN16](../../scoregens/gen16).
+
 This opcode is the same as of [transeg](../../opcodes/transeg) with an additional release segment triggered by a MIDI noteoff event, a negative p1 [note event](../../scoregens/i) in the score or a [turnoff2](../../opcodes/turnoff2) opcode.
 
 ## Examples
+
 Here is an example of the transegr opcode. It uses the file [transegr.csd](../../examples/transegr.csd).
+
 ``` csound-orc title="Example of the transegr opcode." linenums="1"
 --8<-- "examples/transegr.csd"
 ```
 
 ## See also
+
 [Linear and Exponential Generators](../../siggen/lineexp)
 
 ## Credits
-Author: John ffitch  
-January 2010
+
+Author: John ffitch<br>
+january 2010<br>
 
 New in Csound version 5.12
