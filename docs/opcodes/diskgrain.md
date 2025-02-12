@@ -5,7 +5,7 @@ category:Signal Generators:Granular Synthesis
 # diskgrain
 Synchronous granular synthesis, using a soundfile as source.
 
-_diskgrain_ implements synchronous granular synthesis. The source sound for the grains is obtained by reading a soundfile containing the samples of the source waveform.
+The source sound for the grains is obtained by reading a soundfile containing the samples of the source waveform.
 
 ## Syntax
 ``` csound-orc
@@ -47,7 +47,7 @@ This opcode is a variation on the [syncgrain](../../opcodes/syncgrain) opcode.
 
 > :memo: **Note**
 > 
-> diskgrain does not do any resanmpling, so if the sample rate of the source filename is not the same as csound's sr value there will be pitch shifts.
+> diskgrain does not do any resanmpling, so if the sample rate of the source filename is not the same as csound's sr value there will be pitch shifts
 
 ## Examples
 
