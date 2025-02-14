@@ -87,4 +87,8 @@ nav:
       - Phasors: 'siggen/phasors.md'
       - Random (Noise) Generators: 'siggen/random.md'
       - Sample Playback and Soundfonts: 'siggen/sample.md'
+      - Scanned Synthesis: 'siggen/scantop.md'
       - Table Access: 'siggen/tableacc.md'
+      - Wave Terrain Synthesis: 'siggen/waveterr.md'
+      - Waveguide Physical Modeling: 'siggen/wavguide.md'
+
