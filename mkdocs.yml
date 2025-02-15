@@ -65,6 +65,7 @@ nav:
     - Durations in Instrument Events: 'score/note-durations.md'
     - Preprocessing: 'score/preproc.md'
     - List of Statements: 'score/statemnt.md'
+    - GEN routines: 'score/genroutines.md'
     - Macros: 'score/macros.md'
     - Included Files: 'score/mult.md'
     - Expressions: 'score/eval.md'
