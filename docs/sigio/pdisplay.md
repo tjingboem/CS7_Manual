@@ -8,7 +8,7 @@ Opcodes for printing and displaying values are:
 * [ftprint](../../opcodes/ftprint)
 * [print](../../opcodes/print)
 * [printf](../../opcodes/printf)
-* [printf](../../opcodes/printf_i)
+* [printf_i](../../opcodes/printf)
 * [printk](../../opcodes/printk)
 * [printk2](../../opcodes/printk2)
 * [printks](../../opcodes/printks)

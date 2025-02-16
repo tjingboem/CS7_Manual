@@ -98,5 +98,8 @@ nav:
       - Signal Output: 'sigio/output.md'
       - Software Bus: 'sigio/softbus.md'
       - Printing and Display: 'sigio/pdisplay.md'
+      - Sound Files Queries: 'sigio/queries.md'
+    - Signal Modifiers:
+      - Amplitude Modifiers and Dynamic processing: 'sigmod/ampmod.md'
       
 
