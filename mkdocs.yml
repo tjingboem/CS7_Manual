@@ -92,4 +92,11 @@ nav:
       - Table Access: 'siggen/tableacc.md'
       - Wave Terrain Synthesis: 'siggen/waveterr.md'
       - Waveguide Physical Modeling: 'siggen/wavguide.md'
+    - Signal Input and Output:
+      - File Input and Output: 'sigio/fileio.md'
+      - Signal Input: 'sigio/input.md'
+      - Signal Output: 'sigio/output.md'
+      - Software Bus: 'sigio/softbus.md'
+      - Printing and Display: 'sigio/pdisplay.md'
+      
 
