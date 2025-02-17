@@ -101,5 +101,8 @@ nav:
       - Sound Files Queries: 'sigio/queries.md'
     - Signal Modifiers:
       - Amplitude Modifiers and Dynamic processing: 'sigmod/ampmod.md'
+      - Convolution and Morphing: 'sigmod/conmorph.md'
+      - Delay: 'sigmod/delayops.md'
+      - Panning and Spatialization: 'sigmod/panspatl.md'
       
 
