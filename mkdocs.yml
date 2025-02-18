@@ -104,5 +104,10 @@ nav:
       - Convolution and Morphing: 'sigmod/conmorph.md'
       - Delay: 'sigmod/delayops.md'
       - Panning and Spatialization: 'sigmod/panspatl.md'
+      - Reverberation: 'sigmod/reverbtn.md'
+      - Sample Level Operators: 'sigmod/sample.md'
+      - Signal Limiters: 'sigmod/siglimit.md'
+      - Special Effects: 'sigmod/speciale.md'
+      - Standard Filers: 'sigmod/standard.md'
       
 
