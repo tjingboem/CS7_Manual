@@ -28,23 +28,29 @@ _asig_ -- a-rate input signal
 
 The Bram de Jong method (_imeth_ = 0) applies the algorithm (denoting _ilimit_ as _limit_ and _iarg_ as _a_):
 
-```
-|x| >= 0 and |x| <= (limit*a):  f(x) = f(x)
-|x| > (limit*a) and |x| <= limit:  f(x) = sign(x) * (limit*a+(x-limit*a)/(1+((x-limit*a)/(limit*(1-a)))2))
-|x| > limit:  f(x) = sign(x) * (limit*(1+a))/2
-```
+$$
+|x| \ge 0 \: \mathrm{and} \: |x| \le (limit \times a):  f(x) = f(x)
+$$
+
+$$
+|x| \gt (limit \times a) \: \mathrm{and} \: |x| \le limit:  f(x) = sign(x) \times (limit \times a+ \frac{x - limit \times a}{1 + ((x-limit \times a)/(limit \times (1-a)))^2})
+$$
+
+$$
+|x| \gt limit:  f(x) = sign(x) \times \frac{(limit\times(1+a))}{2}
+$$
 
 The second method (_imeth_ = 1) is the sine clip:
 
-```
-|x| < limit:  f(x) = limit * sin(π*x/(2*limit)),   |x| >= limit:  f(x) = limit * sign(x)
-```
+$$
+|x| \lt limit:  f(x) = limit \times sin(\pi x/(2 \times limit)), \;  |x| \ge limit:  f(x) = limit \times sign(x)
+$$
 
 The third method (_imeth = 2_) is the tanh clip:
 
-```
-|x| < limit:  f(x) = limit * tanh(x/limit)/tanh(1),   |x| >= limit: f(x) = limit * sign(x)
-```
+$$
+|x| \lt limit:  f(x) = limit \times tanh(x/limit)/tanh(1), \;  |x| \ge limit:  f(x) = limit \times sign(x)
+$$
 
 > :memo: **Note**
 >

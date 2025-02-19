@@ -115,5 +115,10 @@ nav:
       - Signal Limiters: 'sigmod/siglimit.md'
       - Special Effects: 'sigmod/speciale.md'
       - Standard Filers: 'sigmod/standard.md'
+      - Specialized Filters: 'sigmod/speciali.md'
+      - Waveguides: 'sigmod/wavguide.md'
+      - Waveshaping and Phase Distortion: 'sigmod/wavshape.md'
+    - Instrument Control:
+      - Clock Control: 'control/clockctl.md'
       
 

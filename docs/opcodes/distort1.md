@@ -5,7 +5,7 @@ category:Signal Modifiers:Special Effects
 # distort1
 Modified hyperbolic tangent distortion.
 
-It can be used to generate wave shaping distortion based on a modification of the [tanh](../../opcodes/tanh) function.
+_distort1_ can be used to generate wave shaping distortion based on a modification of the [tanh](../../opcodes/tanh) function.
 
 ```
        exp(asig * (shape1 + pregain)) - exp(asig * (shape2 - pregain))

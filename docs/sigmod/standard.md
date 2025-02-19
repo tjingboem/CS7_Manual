@@ -44,8 +44,8 @@
 ### Zero-delay Feedback Filters (Virtual Analog)
 
 * [diode_ladder](../../opcodes/diode_ladder)
-* [k35_hpf](../../opcodes/K35_hpf)
-* [k35_lpf](../../opcodes/K35_lpf)
+* [K35_hpf](../../opcodes/k35_hpf)
+* [K35_lpf](../../opcodes/k35_lpf)
 * [zdf_1pole](../../opcodes/zdf_1pole)
 * [zdf_1pole_mode](../../opcodes/zdf_1pole_mode)
 * [zdf_2pole](../../opcodes/zdf_2pole)
