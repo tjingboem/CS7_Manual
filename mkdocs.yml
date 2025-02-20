@@ -120,5 +120,12 @@ nav:
       - Waveshaping and Phase Distortion: 'sigmod/wavshape.md'
     - Instrument Control:
       - Clock Control: 'control/clockctl.md'
+      - Conditional Values: 'control/conditional.md'
+      - Duration Control Statements: 'control/durctl.md'
+      - Instrument Invocation: 'control/invocat.md'
+      - Program Flow Control: 'control/pgmctl.md'
+      - Realtime Performance Control: 'control/realtime.md'
+      - Initialization and Reinitialization: 'control/reinitn.md'
+      - Sensing and Control: 'control/sensing.md'
       
 
