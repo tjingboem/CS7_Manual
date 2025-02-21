@@ -43,7 +43,7 @@
 * [miditempo](../../opcodes/miditempo)
 * [seqtime](../../opcodes/seqtime)
 * [seqtime2](../../opcodes/seqtime2)
-* [sequ](../../opcodes/sequ)
+* [sequ](../../opcodes/sequencer)
 * [splitrig](../../opcodes/splitrig)
 * [tempo](../../opcodes/tempo)
 * [tempoval](../../opcodes/tempoval)

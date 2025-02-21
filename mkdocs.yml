@@ -127,5 +127,13 @@ nav:
       - Realtime Performance Control: 'control/realtime.md'
       - Initialization and Reinitialization: 'control/reinitn.md'
       - Sensing and Control: 'control/sensing.md'
+      - Stacks: 'control/stacks.md'
+      - Sub-instrument Control: 'control/subinstr.md'
+      - Time Reading: 'control/timeread.md'
+    - Function Table Control:
+      - 'table/top.md'
+      - Table Queries: 'table/queries.md'
+      - Read/Write Operations: 'table/readwrit.md'
+      - Table Reading with Dynamic Selection: 'table/select.md'
       
 

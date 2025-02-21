@@ -3,9 +3,9 @@ id:flashtxt
 category:Signal I/O:Printing and Display
 -->
 # flashtxt
-Allows text to be displayed from instruments like sliders etc.
+Allows text to be displayed from instruments like sliders etc. (only on Unix and Windows at present)
 
-Plugin opcode in control. Only on Unix and Windows at present.
+Plugin opcode in control.
 
 ## Syntax
 ``` csound-orc
@@ -20,7 +20,7 @@ _String_ -- the string to be displayed.
 
 ### Performance
 
-Note that this opcode is not available on Windows due to the implimentation of pipes on that system
+Note that this opcode is not available on Windows due to the implimentation of pipes on that system.
 
 A window is created, identified by the iwhich argument, with the text string displayed.  If the text is replaced by a number then the window id deleted.  Note that the text windows are globally numbered so different instruments can change the text, and the window survives the instance of the instrument.
 
