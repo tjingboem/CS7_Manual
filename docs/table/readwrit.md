@@ -18,7 +18,6 @@ Opcodes that read and write to a table are:
 * [tablefilter](../../opcodes/tablefilter)
 * [tablefilteri](../../opcodes/tablefilteri)
 * [tablegpw](../../opcodes/tablegpw)
-* [tableicopy](../../opcodes/tableicopy)
 * [tableigpw](../../opcodes/tableigpw)
 * [tableimix](../../opcodes/tableimix)
 * [tableiw](../../opcodes/tableiw)

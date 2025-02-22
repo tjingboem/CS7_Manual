@@ -135,5 +135,10 @@ nav:
       - Table Queries: 'table/queries.md'
       - Read/Write Operations: 'table/readwrit.md'
       - Table Reading with Dynamic Selection: 'table/select.md'
+    - Mathematical Operations:
+      - Amplitude Converters: 'math/amp.md'
+      - Arithmetic and Logic Operations: 'math/artlogic.md'
+      - Comparators and Accumulators: 'sigmod/compaccum.md'
+      - Mathematical Functions: 'math/mathfunc.md'
       
 
