@@ -140,5 +140,13 @@ nav:
       - Arithmetic and Logic Operations: 'math/artlogic.md'
       - Comparators and Accumulators: 'sigmod/compaccum.md'
       - Mathematical Functions: 'math/mathfunc.md'
+      - Opcode Equivalents of Functions: 'math/opeqfunc.md'
+      - Random Functions: 'math/rndfunc.md'
+      - Trigonometric Functions: 'math/trig.md'
+      - Linear Algebra Opcodes: 'math/linearalgebra.md'
+      - Array Opcodes: 'math/array.md'
+    - Pitch Converters:
+      - Functions: 'pitch/funcs.md'
+      - Tuning Opcodes: 'pitch/tuning.md'
       
 

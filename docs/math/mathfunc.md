@@ -1,4 +1,4 @@
-# *Mathematical Functions**
+# **Mathematical Functions**
 
 Opcodes that perform mathematical functions are:
 
