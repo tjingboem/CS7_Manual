@@ -148,5 +148,10 @@ nav:
     - Pitch Converters:
       - Functions: 'pitch/funcs.md'
       - Tuning Opcodes: 'pitch/tuning.md'
+    - Real-time MIDI Support:
+      - 'midi/top.md'
+      - Virtual MIDI Keyboard: 'midi/virtual.md'
+      - MIDI input and Initialization: 'midi/input.md'
+      - MIDI Message Output: 'midi/output.md'
       
 
