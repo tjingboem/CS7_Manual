@@ -30,7 +30,6 @@ Component sinusoids are described by a control file describing amplitude and fre
 -1, time, amp, time, amp,...
 -2, time, freq, time, freq,...
 ```
-layout>
 such as from hetrodyne filter analysis of an audio file. (For details see [hetro](../../utility/hetro).) The instantaneous amplitude and frequency values are used by an internal fixed-point oscillator that adds each active partial into an accumulated output signal. While there is a practical limit (limit removed in version 3.47) on the number of contributing partials, there is no restriction on their behavior over time. Any sound that can be described in terms of the behavior of sinusoids can be synthesized by _adsyn_ alone.
 
 Sound described by an _adsyn_ control file can also be modified during re-synthesis. The signals _kamod,_ _kfmod_, _ksmod_ will modify the amplitude, frequency, and speed of contributing partials. These are multiplying factors, with _kfmod_ modifying the frequency and _ksmod_ modifying the _speed_ with which the millisecond breakpoint line-segments are traversed. Thus .7, 1.5, and 2 will give rise to a softer sound, a perfect fifth higher, but only half as long. The values 1,1,1 will leave the sound unmodified. Each of these inputs can be a control signal.
