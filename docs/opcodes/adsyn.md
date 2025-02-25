@@ -5,8 +5,6 @@ category:Signal Generators:Additive Synthesis/Resynthesis
 # adsyn
 Output is an additive set of individually controlled sinusoids, using an oscillator bank.
 
-Output is an additive set of individually controlled sinusoids, using an oscillator bank.
-
 ## Syntax
 ``` csound-orc
 ares adsyn kamod, kfmod, ksmod, ifilcod
